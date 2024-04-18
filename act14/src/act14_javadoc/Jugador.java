@@ -11,41 +11,14 @@ package act14_javadoc;
 	//hacer las pruebas y la documentación. Aquí no se han creado porque no aportan nada
 
 		
-		public int getDorsal() {
-			return dorsal;
-		}
-
-		public void setDorsal(int dorsal) {
-			this.dorsal = dorsal;
-		}
-
-		public int getNumeroTarjetasAmarillas() {
-			return numeroTarjetasAmarillas;
-		}
-
-		public void setNumeroTarjetasAmarillas(int numeroTarjetasAmarillas) {
-			this.numeroTarjetasAmarillas = numeroTarjetasAmarillas;
-		}
-
-		public int getNumeroTarjetasRojas() {
-			return numeroTarjetasRojas;
-		}
-
-		public void setNumeroTarjetasRojas(int numeroTarjetasRojas) {
-			this.numeroTarjetasRojas = numeroTarjetasRojas;
-		}
-
-		
 		/**
-		 * El dorsal pasado por parametro es mayor o igual que 1 y si
-		 * es menor o igual que 30, sera igual a dorsal
-		 * 
-		 * en caso contrario es menos 1 
-		 * 
-		 * @param dorsal se pasa por parametro
+		 * Método que sirve para poner el dorsal.
+		 * Comprueba si el dorsal pasado por parámetro, se encuentra entre el rango 1-30 inclusives, si se encuentra
+		 * en el rango el atributo dorsal del objeto Jugador se igualará al número del dorsal pasado por parámtro.
+		 * En caso contrario, el altributo se igualará en -1.
+		 * @param dorsal que se pasa por parametro
 		 */
 		public void ponerDorsal(int dorsal) {
-			
 			if(dorsal >= 1 && dorsal <= 30) {
 				this.dorsal = dorsal;
 			}else {
@@ -53,12 +26,20 @@ package act14_javadoc;
 			}
 		}
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		/**
-		 * Metodo si un jugador esta expulsado
-		 * 
-		 * @return si el jugador tiene dos amarillas retorna false, si el numero
-		 * de rojas es 1 sera true y retorna expulsado
-		 * 
+		 * Método si un jugador está expulsado. Crea la variable expulsado y la valoraliza en false.
+		 * Comprueba/evalúa el atributo numeroTarjetasAmarillas y en caso de que sea igual a 2, expulsado se valora en true.
+		 * También evalúa el atributo numeroTarjetasRojas y en caso de que sea igual a 1, expulsado se valora en true.
+		 * @return devuelve la variable expulsado.
 		 */
 	public boolean estaExpulsado() {
 		
@@ -72,5 +53,35 @@ package act14_javadoc;
 			expulsado = true;
 		}                          
 	return expulsado;
-	}            
+	}       
+	
+	
+	
+	//-----------GETTERS Y SETTERS----------
+	public int getDorsal() {
+		return dorsal;
+	}
+
+	public void setDorsal(int dorsal) {
+		this.dorsal = dorsal;
+	}
+
+	public int getNumeroTarjetasAmarillas() {
+		return numeroTarjetasAmarillas;
+	}
+
+	public void setNumeroTarjetasAmarillas(int numeroTarjetasAmarillas) {
+		this.numeroTarjetasAmarillas = numeroTarjetasAmarillas;
+	}
+
+	public int getNumeroTarjetasRojas() {
+		return numeroTarjetasRojas;
+	}
+
+	public void setNumeroTarjetasRojas(int numeroTarjetasRojas) {
+		this.numeroTarjetasRojas = numeroTarjetasRojas;
+	}
+	//-----------GETTERS Y SETTERS----------
+	
+	
 }

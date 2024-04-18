@@ -28,7 +28,7 @@ public class Soldado {
       * Metodó que sirve para que un Soldado dispare a otro Soldado pasado por parámetro.
       * Decrementa en 1 el número de balas del propio Soldado y valoraliza el valor del atributo estaMuerto 
       * del Soldado pasado por parámtero en TRUE.
-      * @param sol
+      * @param sol objeto Soldado pasado por parámetro.
       */
      
      public void disparar(Soldado sol) {
