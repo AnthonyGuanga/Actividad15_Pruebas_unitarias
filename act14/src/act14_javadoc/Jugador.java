@@ -5,12 +5,9 @@ package act14_javadoc;
 		private int numeroTarjetasAmarillas;
 		private int numeroTarjetasRojas;
 
-		
-		
 	//Crear los métodos “get” y “set” de los atributos cuando se vayan a 
 	//hacer las pruebas y la documentación. Aquí no se han creado porque no aportan nada
 
-		
 		/**
 		 * Método que sirve para poner el dorsal.
 		 * Comprueba si el dorsal pasado por parámetro, se encuentra entre el rango 1-30 inclusives, si se encuentra
@@ -24,15 +21,7 @@ package act14_javadoc;
 			}else {
 				this.dorsal = -1;
 			}
-		}
-		
-		
-		
-		
-		
-		
-		
-		
+		}		
 		
 		
 		/**
@@ -54,6 +43,8 @@ package act14_javadoc;
 		}                          
 	return expulsado;
 	}       
+	
+	
 	
 	
 	

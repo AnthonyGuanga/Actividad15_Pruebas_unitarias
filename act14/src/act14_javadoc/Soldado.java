@@ -2,7 +2,6 @@ package act14_javadoc;
 public class Soldado {
 
      private boolean estaMuerto;
-
      private int numeroBalas;
 
      //Crear los métodos “get” y “set” de los atributos cuando se vayan a hacer las pruebas y
